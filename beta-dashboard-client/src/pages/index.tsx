@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
+import { Navbar, Footer } from '../components'
 
 const Home: NextPage = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="min-h-screen bg-[#0B0B0B]">
+      <div>
+        <Navbar />
+      </div>
+      <Footer />
+    </div>
   )
 }
 
