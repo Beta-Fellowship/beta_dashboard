@@ -3,6 +3,7 @@ import cors from 'cors';
 import routes from '../routes';
 import session from 'express-session';
 import passport from 'passport';
+import store from 'connect-mongo';
 require('../strategies/discord');
 
 export const createApp = (): Express => {
@@ -14,6 +15,7 @@ export const createApp = (): Express => {
   // Enable Cors
   app.use(cors({origin: ['http://localhost:3000'], credentials: true,}));
 
+  // Enable session
   app.use(session({
     secret: 'hHHDUBI/UB>>?NUIBIOHOOO(BOBFOQ^QNOWIDHO',
     resave: false,
@@ -21,6 +23,7 @@ export const createApp = (): Express => {
     cookie: {
       maxAge: 1000 * 60 * 60 * 24,
     },
+    store: store.create({mongoUrl: process.env.MONGO_URL}),
   }));
 
   // Enable passport

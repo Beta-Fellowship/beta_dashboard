@@ -17,9 +17,11 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "connect-mongo": "^4.6.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
+    "mongoose": "^6.4.0",
     "passport": "^0.6.0",
     "passport-discord": "^0.1.4"
   },
@@ -27,5 +29,11 @@
     "start": "nodemon index.js",
     "dev": "nodemon ./src/index.ts",
     "build": "tsc"
+  },
+  "_moduleAliases": {
+    "@schemas": "./src/database/schema",
+    "@routes": "./src/routes",
+    "@strategies": "./src/strategies",
+    "@utils": "./src/utils"
   }
 }
