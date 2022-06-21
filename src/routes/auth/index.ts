@@ -11,4 +11,8 @@ router.get('/discord/redirect', passport.authenticate('discord'), (req, res) => 
   res.send({msg: 'success'});
 });
 
+router.get('/status', (req, res) => {
+  return req.user ? res.send(req.user) : res.status(401).send({ msg: 'Unauthorized!' });
+});
+
 export default router;
