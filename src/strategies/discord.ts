@@ -17,7 +17,7 @@ passport.deserializeUser(async (id: any, done) => {
     console.log(error);
     return done(error, false);
   }
-})
+});
 
 passport.use(
   new Strategy({
