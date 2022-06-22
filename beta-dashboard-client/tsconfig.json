@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/EarnPointCard/Approx.jsx", src/components/EarnPointCard/Card.jsxs"],
   "exclude": ["node_modules"]
 }

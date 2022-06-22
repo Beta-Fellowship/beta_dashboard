@@ -1,2 +1,9 @@
 export { default as Navbar } from "./Navbar";
 export { default as Footer } from "./Footer";
+export { default as Card } from "./EarnPointCard/Card";
+export { default as Approx } from "./EarnPointCard/Approx";
+export { default as Linkdiv } from "./EarnPointCard/Linkdiv";
+export { default as LittleCircle } from "./EarnPointCard/LittleCircle";
+export { default as OutCircle } from "./EarnPointCard/OutCircle";
+export { default as Points } from "./EarnPointCard/Points";
+export { default as Subtract } from "./EarnPointCard/Subtract";
