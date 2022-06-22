@@ -5,7 +5,7 @@ import React from "react";
 
 import beta_logo from '../../public/beta.png'
 
-const NavBarItem = ({ title, classprops }) => (
+const NavBarItem = ({ title, classprops }: { title:any, classprops:any }) => (
   <li className={`mx-4 py-1 px-5 cursor-pointer border-solid border-white border-2 rounded-md text-xs ${classprops}`}>{title}</li>
 );
 
