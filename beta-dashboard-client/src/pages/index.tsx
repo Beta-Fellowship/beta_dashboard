@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div className="min-h-screen bg-[#0B0B0B]">
       <div>
-        <Navbar />
+        <Navbar page="Dashboard" />
       </div>
       <Card>
         <Points />
