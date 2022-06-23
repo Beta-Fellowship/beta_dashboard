@@ -1,6 +1,6 @@
 import type { GetServerSidePropsContext, NextPage } from 'next'
 import Link from 'next/link'
-import { Navbar, Footer, Card, Points, Approx, OutCircle, LittleCircle, Linkdiv, Subtract } from '../../components'
+import { Navbar, Footer, CouponCardCombo, EarnPoint } from '../../components'
 import { fetchDiscordInfo } from '../../utils/api'
 
 const Dashboard: NextPage = () => {
@@ -9,19 +9,21 @@ const Dashboard: NextPage = () => {
       <div>
         <Navbar page="Dashboard" />
       </div>
-      <Card>
-        <Points />
-        <Approx />
-        <OutCircle />
-        <LittleCircle>
-          <Linkdiv>
-            <Link href="https://www.google.com/">EARN POINTS</Link>
-          </Linkdiv>
-        </LittleCircle>
-        <Subtract>
 
-        </Subtract>
-      </Card>
+      <div>
+        <EarnPoint />
+      </div>
+
+      <div className='flex flex-row space-x-5'>
+        <div>
+          <CouponCardCombo />
+        </div>
+
+        <div>
+          <CouponCardCombo />
+        </div>
+      </div>
+
       <Footer />
     </div>
   )
