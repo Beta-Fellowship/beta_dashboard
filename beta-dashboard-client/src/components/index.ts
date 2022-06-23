@@ -7,3 +7,4 @@ export { default as LittleCircle } from "./EarnPointCard/LittleCircle";
 export { default as OutCircle } from "./EarnPointCard/OutCircle";
 export { default as Points } from "./EarnPointCard/Points";
 export { default as Subtract } from "./EarnPointCard/Subtract";
+export { default as Annotation } from "./EarnPointCard/Annotation";
