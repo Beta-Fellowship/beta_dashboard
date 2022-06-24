@@ -15,3 +15,5 @@ export { default as SideSubtract } from "./Coupon/SideSubtract";
 export { default as EarnPoint } from "./EarnPoint";
 export { default as CouponCardCombo } from "./CouponCardCombo";
 export { default as BetaLogo } from "./Coupon/BetaLogo";
+export { default as BetaFellowshipText } from "./Coupon/BetaFellowshipText";
+export { default as Redeem } from "./Coupon/Redeem";

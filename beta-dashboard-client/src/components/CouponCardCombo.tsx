@@ -1,13 +1,17 @@
-import {CouponCard, CutCircle, OtherSideCutCircle, SideSubtract, BetaLogo} from '.'
+import {CouponCard, CutCircle, OtherSideCutCircle, SideSubtract, BetaLogo, BetaFellowshipText, Redeem} from '.'
 
-export default function EarnPoint(props: any) {
+export default function CouponCardCombo(props: any) {
     return (
         <div>
           <CouponCard>
             <CutCircle />
             <SideSubtract>
-              <BetaLogo />
+              <div className='absolute top-[75px] left-[30px] '>
+                <BetaLogo />
+              </div>
             </SideSubtract>
+            <BetaFellowshipText/>
+            <Redeem/>
             <OtherSideCutCircle />
           </CouponCard>
         </div>

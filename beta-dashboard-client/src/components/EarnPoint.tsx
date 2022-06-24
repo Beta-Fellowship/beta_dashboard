@@ -9,7 +9,7 @@ export default function EarnPoint(props: any) {
                 <OutCircle />
                 <LittleCircle>
                     <Linkdiv>
-                        <Link href="https://www.google.com/">EARN POINTS</Link>
+                        <Link href="https://betafellow.com/">EARN POINTS</Link>
                     </Linkdiv>
                 </LittleCircle>
                 <Subtract>
