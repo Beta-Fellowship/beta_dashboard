@@ -6,10 +6,13 @@ import React from "react";
 import beta_logo from '../../public/beta.png'
 import profile from '../../public/profile2.png'
 
-const NavBarItem = ({ title, classprops, extraprops }: { title: any, classprops: any, extraprops:any }) => (
+const NavBarItem = ({ page, title, classprops, extraprops }: { page: any, title: any, classprops: any, extraprops:any }) => (
   <div className={`${extraprops}`}>
     <li className={`py-2 px-7 bg-[#0B0B0B] cursor-pointer rounded`}>
-      <p className={`${classprops} font-['Poppins'] text-xs`}>{title}</p>
+      <a href={`./${page}`}>
+        <p className={`${classprops} font-['Poppins'] text-xs`}>{title}</p>
+      </a>
+      
     </li>
   </div>
   
@@ -25,7 +28,7 @@ const Navbar = ({page}:{page:string}) => {
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Dashboard", "Earn Points"].map((item, index) => (
-          item == page ? <NavBarItem key={item + index} title={item} extraprops="py-0.5 px-0.5 mx-4 rounded-md bg-gradient-to-r from-[#FFD42B] to-[#53A548]" classprops="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD42B] to-[#53A548]" /> : <NavBarItem key={item + index} title={item} extraprops="" classprops="" />
+          item == page ? <NavBarItem page="" key={item + index} title={item} extraprops="py-0.5 px-0.5 mx-4 rounded-md bg-gradient-to-r from-[#FFD42B] to-[#53A548]" classprops="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD42B] to-[#53A548]" /> : <NavBarItem page="earnpoints" key={item + index} title={item} extraprops="" classprops="" />
         ))}
         <li className="flex flex-row justify-start mx-4 cursor-pointer space-x-2">
           <Image src={profile} alt="Beta Logo" width={28} height={28} className="object-scale-down cursor-pointer" />
@@ -45,8 +48,8 @@ const Navbar = ({page}:{page:string}) => {
             flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
           >
             <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
-            {["Dashboard", "Earn Points"].map(
-              (item, index) => <NavBarItem key={item + index} title={item} extraprops="" classprops="my-2 text-lg" />,
+            {["Dashboard", "Earn Points"].map((item, index) =>
+              item == page ? <NavBarItem page="" key={item + index} title={item} extraprops="" classprops="my-2 text-lg" /> : <NavBarItem page="earnpoints" key={item + index} title={item} extraprops="" classprops="my-2 text-lg" />,
             )}
           </ul>
         )}
