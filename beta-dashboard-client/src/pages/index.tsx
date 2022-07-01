@@ -4,7 +4,7 @@ import Login from './login'
 
 const Home: NextPage = () => {
   return (
-    <Login />
+    <Dashboard />
   )
 }
 
