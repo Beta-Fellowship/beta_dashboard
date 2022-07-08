@@ -2,7 +2,7 @@ import {CouponCard, CutCircle, OtherSideCutCircle, SideSubtract, BetaLogo, BetaF
 
 export default function CouponCardCombo(props: any) {
     return (
-        <div>
+        <div className='absolute'>
           <CouponCard>
             <CutCircle />
             <SideSubtract>

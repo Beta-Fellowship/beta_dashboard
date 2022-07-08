@@ -17,3 +17,8 @@ export { default as CouponCardCombo } from "./CouponCardCombo";
 export { default as BetaLogo } from "./Coupon/BetaLogo";
 export { default as BetaFellowshipText } from "./Coupon/BetaFellowshipText";
 export { default as Redeem } from "./Coupon/Redeem";
+export { default as BecomeFellow } from "./table/BecomeFellow";
+export { default as Inviteafriend } from "./table/Inviteafriend";
+export { default as SendMessage } from "./table/SendMessage";
+export { default as ThreeCombo} from "./ThreeCombo";
+export { default as Contribute} from "./table/Contribute"

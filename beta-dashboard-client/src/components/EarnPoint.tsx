@@ -1,4 +1,4 @@
-import {Card, Points, Approx, OutCircle, LittleCircle, Linkdiv, Subtract, Annotation } from '../components'
+import {Card, Points, Approx, OutCircle, LittleCircle, Linkdiv, Subtract, Annotation } from '.'
 import Link from 'next/link'
 export default function EarnPoint(props: any) {
     return (
